@@ -1,0 +1,191 @@
+body {
+	font-size: 13px;
+	font-family: "RobotoDraft","Roboto",sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	margin: 0px;
+	background-size: cover;
+	transition-duration: 1s;
+	overflow: hidden;
+}
+#backB {
+	position: fixed;
+	background-color: #263238;
+	border-radius: 50%;
+	width: 72px;
+	height: 72px;
+	box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.5);
+	transition-duration: 1s;
+	cursor: pointer;
+}
+#backB:hover {
+	background-color: #48545A;
+}
+#backB.show {
+	top: 20;
+	left: 20;
+}
+#backB.hide {
+	top: 20;
+	left: -100;
+}
+#bodyGradient {
+	position: fixed;
+	background-image: linear-gradient(rgba(0,0,0,0.4) 0%,rgba(0,0,0,.6) 75%,rgba(0,0,0,.8) 100%);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: -2;
+}
+h1, h4 {
+	color: #fff;
+	text-shadow: 0px 2px 7px black;
+	text-align: center;
+	font-family: "Bradley Hand ITC","Roboto",sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 300;
+}
+p {
+	font-family: "Bradley Hand ITC","Roboto",sans-serif;
+	font-weight: 600;
+}
+#body, #body2, #body3, #body4, #body5, #body6, #body7, #body8, #credits{
+	animation-name: intro;
+	animation-duration: 5s;
+	transition-duration: 1s;
+} 
+@keyframes intro {
+	0% {-webkit-filter: opacity(0%)};
+	100% {-webkit-filter: opacity(100%)};
+}
+#body.hide,#body1.hide,#body2.hide,#body3.hide,#body4.hide,#body5.hide,#body6.hide,#body7.hide,#body8.hide,#credits.hide {
+	transition-duration: 1s;
+	margin: 0px;
+	padding: 0px;
+	-webkit-filter: opacity(0%);
+	visibility: hidden;
+	position: fixed;
+	top: -20000px;
+}
+h1 {
+	font-size: 60pt;
+	z-index: -2;
+	position: relative;
+}
+h4 {
+	font-size: 20pt;
+	z-index: -2;
+	position: relative;
+}
+input[type="button"] {
+	background-color: rgba(225,225,225,0);
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+	color: white;
+	padding: 10px;
+	width: 10%;
+	transition-duration: 0.2s;
+	cursor: pointer;
+	z-index: 1;
+}
+input[type="button"]:hover {
+	background-color: rgba(225,225,225,0.3);
+}
+input[type="button"]:focus {
+	outline: none;
+}
+.card {
+	width: 100px;
+	height: 30px;
+	background-color: rgba(225,225,225,0.1);
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+	color: white;
+	padding: 10px;
+	transition-duration: 0.2s;
+	cursor: pointer;
+	vertical-align: -webkit-baseline-middle;
+	text-align: center;
+	display: inline-block;
+	z-index: 1;
+	margin: 1px;
+}
+.card:hover {
+	background-color: rgba(225,225,225,0.3);
+}
+#mute {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	width: 72px;
+	height: 72px;
+	transition-duration: 1s;
+}
+#mute.hide {
+	right: -60px;
+	background-color: white;
+	border-radius: 50%;
+}
+#mute.show {
+	right: 50px;
+	background-color: #333;
+	border-radius: 5%;
+}
+.TXTBox {
+	width: 800;
+	height: 400;
+	background-color: rgba(225,225,225,0.8);
+	left: 50%;
+	margin-left:-405;
+	position:absolute;
+	box-shadow:0px 5px 20px black;
+	padding: 20px;
+	font-size: 20px;
+	transition-duration: 3s;
+	z-index: -2;
+	text-align: justify;
+}
+.txtBox.hide {
+	bottom: -100%;
+	transition-duration: 3s;
+}
+input[type="button"].nextB {
+	width: 50px;
+	height: 100px;
+	position: fixed;
+	z-index: 5;
+}
+#imgfilm {
+	transition-duration: 0.5s;
+	margin-top: -8%;
+	margin-left: 10%;
+}
+li:hover {
+	margin-left: 15px;
+}
+li {
+	transition-duration: 0.2s;
+	cursor: default;
+}
+#credits_roll h1 {
+	font-size: 20pt;
+	font-weight: 600;
+}
+#credits_roll h4 {
+	font-size: 15pt;
+	font-weight: 400;
+}
+#credits_roll {
+	margin-top: 10px;
+	transition-duration: 120s;
+}
+#credits_roll.pause {
+	margin-top: 90%;
+	transition-duration: 1s;
+}
+#credits_roll.play {
+	margin-top: -220%
+}
